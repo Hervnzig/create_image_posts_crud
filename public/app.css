@@ -1,0 +1,20 @@
+body {
+    background: #eee;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+.toggler {
+    padding: 12px;
+    background: #222;
+}
+
+#openNav {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/app.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <title>Create post</title>
+</head>
+
+<body>
+
+    <div class="toggler">
+        <span id="openNav">&#9776; Menu</span>
+    </div>
+    <nav id="sideNav">
+        <ul>
+            <li>
+                <h2>Fire posts</h2>
+            </li>
+            <a href="#" class="closebtn" id="closeNav">&times;</a>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Write new post</h1>
+    </header>
+
+    <main id="main">
+        <form method="POST" id="createForm">
+            <p>Fill in the empty boxes below</p>
+            <input type="text" placeholder="Title of the post" id="title">
+            <textarea id="content" type="text" placeholder="Start typing" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="file" id="cover">
+            <input id="postSubmit" type="submit" value="submit">
+        </form>
+
+        <div id="progressHandler">
+            <p>Processing the request, please stand by ...</p>
+            <progress id="progressBar" value="" max="100"></progress>
+        </div>
+
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="./functions/main.js"></script>
+
+</body>
+
+</html>

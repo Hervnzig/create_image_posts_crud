@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/app.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <title>Fire posts</title>
+</head>
+
+<body>
+
+    <div class="toggler">
+        <span id="openNav">&#9776; Menu</span>
+    </div>
+    <nav id="sideNav">
+        <ul>
+            <li>
+                <h2>Fire posts</h2>
+            </li>
+            <a href="#" class="closebtn" id="closeNav">&times;</a>
+            <li><a href="./create.html">New post</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Fire posts app</h1>
+    </header>
+
+    <main id="main">
+        <div id="posts">
+
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="./functions/main.js"></script>
+
+</body>
+
+</html>
